@@ -12,11 +12,11 @@ LRESULT WINAPI WndProcHandler(HWND window, UINT message, WPARAM wParam, LPARAM l
 
     if (message == WM_KEYDOWN && wParam == VK_INSERT)
     {
-        menu->toggleState();
+        menu->ToggleState();
     }
     
     const auto& io = ImGui::GetIO();
-    if (menu->getState() && (io.WantCaptureMouse || io.WantCaptureKeyboard))
+    if (menu->GetState() && (io.WantCaptureMouse || io.WantCaptureKeyboard))
     {
         return true;
     }
@@ -39,6 +39,8 @@ void Menu::Init(IDirect3DDevice9* device)
     ImGui::CreateContext();
     ImGui_ImplWin32_Init(deviceParameters.hFocusWindow);
     ImGui_ImplDX9_Init(device);
+
+    ImGui_ImplDX9_InvalidateDeviceObjects();
 
     initialized = true;
 }

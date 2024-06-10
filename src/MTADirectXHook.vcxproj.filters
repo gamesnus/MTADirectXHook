@@ -44,6 +44,15 @@
     <ClCompile Include="Menu\Menu.cpp">
       <Filter>Menu</Filter>
     </ClCompile>
+    <ClCompile Include="Hooks\user32\SetCursorPos.cpp">
+      <Filter>Hooks\user32</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\d3d9\Reset.cpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\d3d9\Present.cpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="thirdparty">
@@ -131,6 +140,15 @@
     </ClInclude>
     <ClInclude Include="Menu\Menu.hpp">
       <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\user32\SetCursorPos.hpp">
+      <Filter>Hooks\user32</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\d3d9\Reset.hpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\d3d9\Present.hpp">
+      <Filter>Hooks\d3d9</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

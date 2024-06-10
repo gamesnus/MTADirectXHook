@@ -33,6 +33,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>$(DXSDK_DIR)\Include\;$(IncludePath)</IncludePath>
     <LibraryPath>$(DXSDK_DIR)\Lib\x86\;$(LibraryPath)</LibraryPath>
+    <OutDir>..\bin</OutDir>
+    <IntDir>..\bin\obj</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -53,6 +55,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
       <AdditionalLibraryDirectories>$(DXSDK_DIR)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>D:\Games\GTA San Andreas\mta\loader\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -68,7 +71,10 @@
     <ClCompile Include="..\thirdparty\minhook\src\hde\hde64.c" />
     <ClCompile Include="..\thirdparty\minhook\src\hook.c" />
     <ClCompile Include="..\thirdparty\minhook\src\trampoline.c" />
+    <ClCompile Include="Hooks\d3d9\Present.cpp" />
+    <ClCompile Include="Hooks\d3d9\Reset.cpp" />
     <ClCompile Include="Hooks\Hooks.cpp" />
+    <ClCompile Include="Hooks\user32\SetCursorPos.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
   </ItemGroup>
@@ -89,7 +95,10 @@
     <ClInclude Include="..\thirdparty\minhook\src\hde\table32.h" />
     <ClInclude Include="..\thirdparty\minhook\src\hde\table64.h" />
     <ClInclude Include="..\thirdparty\minhook\src\trampoline.h" />
+    <ClInclude Include="Hooks\d3d9\Present.hpp" />
+    <ClInclude Include="Hooks\d3d9\Reset.hpp" />
     <ClInclude Include="Hooks\Hooks.hpp" />
+    <ClInclude Include="Hooks\user32\SetCursorPos.hpp" />
     <ClInclude Include="Menu\Menu.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

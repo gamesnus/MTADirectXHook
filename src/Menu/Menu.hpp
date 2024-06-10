@@ -8,8 +8,8 @@ class Menu
     bool initialized = false;
 
 public:
-    bool getState() { return state; }
-    bool toggleState()
+    bool GetState() { return state; }
+    bool ToggleState()
     {
         state = !state;
         return state;

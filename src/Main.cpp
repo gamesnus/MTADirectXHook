@@ -1,12 +1,13 @@
 #include <thread>
 
+#include "Hooks/Hooks.hpp"
 #include "Menu/Menu.hpp"
 
 Menu* menu = new Menu;
 
 void Main()
 {
-
+    Hooks::InstallHooks();
 }
 
 BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD reason, LPVOID reserved)
