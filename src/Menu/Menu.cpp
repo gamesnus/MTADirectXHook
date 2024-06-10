@@ -14,7 +14,7 @@ LRESULT WINAPI WndProcHandler(HWND window, UINT message, WPARAM wParam, LPARAM l
     {
         menu->ToggleState();
     }
-    
+
     const auto& io = ImGui::GetIO();
     if (menu->GetState() && (io.WantCaptureMouse || io.WantCaptureKeyboard))
     {

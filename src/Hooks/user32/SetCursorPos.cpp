@@ -19,7 +19,7 @@ BOOL WINAPI hkSetCursorPos(int X, int Y)
 void SetCursorPos::InstallHook()
 {
     MH_STATUS status;
-    
+
     status = MH_CreateHook(&::SetCursorPos, &hkSetCursorPos, reinterpret_cast<LPVOID*>(&oSetCursorPos));
     if (status != MH_OK)
     {

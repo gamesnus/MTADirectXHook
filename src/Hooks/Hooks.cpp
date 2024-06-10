@@ -23,7 +23,7 @@ void Hooks::InstallHooks()
     while (!GetModuleHandleA("cgui.dll"))
     {
     }
-    
+
     Present::InstallHook();
     Reset::InstallHook();
 }
