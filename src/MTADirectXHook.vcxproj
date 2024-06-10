@@ -68,7 +68,9 @@
     <ClCompile Include="..\thirdparty\minhook\src\hde\hde64.c" />
     <ClCompile Include="..\thirdparty\minhook\src\hook.c" />
     <ClCompile Include="..\thirdparty\minhook\src\trampoline.c" />
+    <ClCompile Include="Hooks\Hooks.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\thirdparty\imgui\backends\imgui_impl_dx9.h" />
@@ -87,6 +89,8 @@
     <ClInclude Include="..\thirdparty\minhook\src\hde\table32.h" />
     <ClInclude Include="..\thirdparty\minhook\src\hde\table64.h" />
     <ClInclude Include="..\thirdparty\minhook\src\trampoline.h" />
+    <ClInclude Include="Hooks\Hooks.hpp" />
+    <ClInclude Include="Menu\Menu.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

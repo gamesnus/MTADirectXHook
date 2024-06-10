@@ -38,6 +38,12 @@
     <ClCompile Include="..\thirdparty\minhook\src\hook.c">
       <Filter>thirdparty\minhook\src</Filter>
     </ClCompile>
+    <ClCompile Include="Hooks\Hooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="thirdparty">
@@ -57,6 +63,18 @@
     </Filter>
     <Filter Include="thirdparty\minhook\src\hde">
       <UniqueIdentifier>{c9e3d842-3ac8-4794-9cf3-a88d9ab3f01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{da8517a6-2ed4-4ab6-96b3-6dfa42d6a7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\d3d9">
+      <UniqueIdentifier>{c27a165d-076d-4b34-8cf5-6c21ba2a42dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\user32">
+      <UniqueIdentifier>{9be34b71-0111-4852-87e6-5cbed7ef1550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{bbf4c725-f375-4d5a-9691-46d7905f0611}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +125,12 @@
     </ClInclude>
     <ClInclude Include="..\thirdparty\minhook\src\buffer.h">
       <Filter>thirdparty\minhook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\Hooks.hpp">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Menu.hpp">
+      <Filter>Menu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
