@@ -33,6 +33,8 @@ void Hooks::RemoveHooks()
     MH_STATUS status;
 
     SetCursorPos::RemoveHook();
+    Present::RemoveHook();
+    Reset::RemoveHook();
 
     status = MH_Uninitialize();
     if (status != MH_OK)
