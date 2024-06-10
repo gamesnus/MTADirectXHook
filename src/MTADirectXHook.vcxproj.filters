@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_demo.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_draw.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_tables.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_widgets.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>thirdparty\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\backends\imgui_impl_dx9.cpp">
+      <Filter>thirdparty\imgui\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\minhook\src\hde\hde64.c">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\minhook\src\hde\hde32.c">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\minhook\src\trampoline.c">
+      <Filter>thirdparty\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\minhook\src\buffer.c">
+      <Filter>thirdparty\minhook\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\minhook\src\hook.c">
+      <Filter>thirdparty\minhook\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{906b0c7e-16f8-4fd0-8f11-67c3c2c1e81a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\imgui">
+      <UniqueIdentifier>{f7f3c9ff-0184-4e58-9272-1e473f9e6c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\imgui\backends">
+      <UniqueIdentifier>{683a8d82-f0c0-4f82-8559-e4e506fe7051}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\minhook">
+      <UniqueIdentifier>{3d93a599-629e-4cf7-8bff-f9019397fe7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\minhook\src">
+      <UniqueIdentifier>{2944854e-5922-4a1f-87c0-862bb369da5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\minhook\src\hde">
+      <UniqueIdentifier>{c9e3d842-3ac8-4794-9cf3-a88d9ab3f01e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\imgui\imstb_textedit.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_truetype.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imconfig.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_internal.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_rectpack.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\backends\imgui_impl_win32.h">
+      <Filter>thirdparty\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\backends\imgui_impl_dx9.h">
+      <Filter>thirdparty\imgui\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\include\MinHook.h">
+      <Filter>thirdparty\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\hde\hde32.h">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\hde\hde64.h">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\hde\pstdint.h">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\hde\table32.h">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\hde\table64.h">
+      <Filter>thirdparty\minhook\src\hde</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\trampoline.h">
+      <Filter>thirdparty\minhook\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\minhook\src\buffer.h">
+      <Filter>thirdparty\minhook\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
