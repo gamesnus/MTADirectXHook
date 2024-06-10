@@ -3,8 +3,6 @@
 
 #include "Present.hpp"
 
-#include <format>
-
 using tPresent = HRESULT(__stdcall*)(IDirect3DDevice9*, const RECT*, const RECT*, HWND, const RGNDATA*);
 tPresent oPresent;
 
